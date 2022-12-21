@@ -1,0 +1,113 @@
+* {
+	margin: 5;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #EFEFEF;
+	color: #363639;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ? ----- PORTADA ----- */
+.portada {
+	width: 100%;
+	background: #EFEFEF;
+
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .5s ease-out all;
+	background-image: url("https://images.milenio.com/gy-gA9PYwlTNQzCY1B_Hc6hVYA8=/958x596/uploads/media/2019/12/02/te-contamos-cual-es-el_0_6_958_596.jpg");;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portada.oculta {
+	transform: translateY(100%);
+}
+
+.portada .header {
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.portada .header h1 {
+	font-size: 80px;
+	color: #F83816;
+	margin-top: 150px;
+}
+
+.portada .header .logotipo {
+	font-size: 50px;
+	font-size: 900;
+	margin-bottom: 20px;
+}
+
+.portada .header .mensaje {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
+
+/* ? ----- MAIN ----- */
+main {
+	
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	padding: 60px 0;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+	
+}
+
+.imagen {
+	align-items: center;
+	
+}
+
+
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.simply-section {
+	background: #fff;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: .6;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 50px;
+	font-weight: 800;
+	opacity: 1;
+}
+
+.simply-word {
+	font-weight: 400;
+	font-size: 30px;
+}
